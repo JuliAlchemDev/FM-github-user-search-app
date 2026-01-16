@@ -146,3 +146,20 @@
      https://gwfh.mranftl.com/fonts
    - Use `font-display: swap` for better performance
    ================================ */
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/space-mono-v17-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/space-mono-v17-latin-700.woff2') format('woff2'); 
+}
+
