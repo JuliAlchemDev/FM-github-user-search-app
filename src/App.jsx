@@ -1,7 +1,11 @@
+import Header from "./components/Header"
+import SearchBar from "./components/SearchBar"
+
 function App() {
   return (
     <>
-    <h1>Let's get started!</h1>
+    <Header/>
+    <SearchBar/>
     </>
   )
 }
