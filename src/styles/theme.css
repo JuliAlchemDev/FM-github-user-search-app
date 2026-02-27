@@ -1,17 +1,18 @@
 :root {
-    --bg-page: var(--clr-neutral-100);
-    --bg-card: var(--clr-neutral-0);
+  --bg-page: var(--clr-neutral-100);
+  --bg-card: var(--clr-neutral-0);
 
-    --text-primary: var(--clr-neutral-700);
-    --text-secondary: var(--clr-neutral-500);
-   
+  --text-primary: var(--clr-neutral-700);
+  --text-secondary: var(--clr-neutral-500);
+  --text-logo: var(--clr-neutral-900);
 }
 
 :root.dark {
-    --bg-page: var(--clr-neutral-900);
-    --bg-card: var(--clr-neutral-800);
+  --bg-page: var(--clr-neutral-900);
+  --bg-card: var(--clr-neutral-800);
 
-    --text-primary: var(--clr-neutral-0);
-    --text-secondary: var(--clr-neutral-0);  /*opacity 70%*/
-   
+  
+  --text-primary: var(--clr-neutral-0);
+  --text-logo: var(--text-primary);
+  --text-secondary: var(--clr-neutral-0); /*opacity 70%*/
 }
