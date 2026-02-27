@@ -114,7 +114,8 @@
    - Keep ratios (1.35 / 1.5 / 1.6) consistent with typography scale
    - Adjust per component type if necessary
    ================================ */
-
+  
+  --lh-100: 1;
   --lh-120: 1.2;
   --lh-140: 1.4;
   --lh-150: 1.5;
