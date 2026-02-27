@@ -7,7 +7,7 @@
   --text-logo: var(--clr-neutral-900);
 }
 
-:root.dark {
+.dark {
   --bg-page: var(--clr-neutral-900);
   --bg-card: var(--clr-neutral-800);
 
