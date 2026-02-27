@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import ThemeToggle from "./ThemeToogle";
 
 const meta = {
-  title: "Components/ThemeToggle",
+  title: "Components/Header/ThemeToggle",
   component: ThemeToggle,
   tags: ["autodocs"],
   parameters: { layout: "centered" },
