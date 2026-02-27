@@ -1,41 +1,16 @@
-import { useState, useEffect } from "react";
-
 import styles from "./Header.module.css";
-import "../../styles/theme.css"; // check this later!
-import SunIcon from "./Icons/SunIcon";
-import MoonIcon from "./Icons/MoonIcon";
+import ThemeToggle from "./ThemeToggle/ThemeToogle";
 
-const Header: React.FC = () => {
-  const [isDark, setIsDark] = useState(false); 
 
-  const themeLabel = isDark ? "Light" : "Dark";
-  const ThemeIcon = isDark ? SunIcon : MoonIcon;
-
-  const toggleTheme = (): void => {
-    setIsDark((prev) => !prev);
-    document.documentElement.classList.toggle("dark");
-  };
-  
-  useEffect(()=> {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDark(prefersDark);
-    if(prefersDark){
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
-
+type HeaderProps = {
+  defaultDark?: boolean;
+}
+const Header: React.FC<HeaderProps> = ({defaultDark = false}) => {
   return (
-      <header>
-        <h1 className={styles.logo}>devfinder</h1>
-        <button
-          type="button"
-          className={styles.themeToggle}
-          onClick={toggleTheme}
-        >
-          {themeLabel}
-          <ThemeIcon />
-        </button>
-      </header>
+    <header>
+      <h1 className={styles.logo}>devfinder</h1>
+      <ThemeToggle defaultDark={defaultDark}/>
+    </header>
   );
 };
 
