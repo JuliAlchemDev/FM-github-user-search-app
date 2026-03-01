@@ -7,7 +7,7 @@ type HeaderProps = {
 }
 const Header: React.FC<HeaderProps> = ({defaultDark = false}) => {
   return (
-    <header>
+    <header className={styles.header}>
       <h1 className={styles.logo}>devfinder</h1>
       <ThemeToggle defaultDark={defaultDark}/>
     </header>

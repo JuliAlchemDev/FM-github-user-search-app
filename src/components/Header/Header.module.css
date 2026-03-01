@@ -1,8 +1,7 @@
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95vw;
 }
 .logo {
   font-size: var(--fs-preset-1);
@@ -10,7 +9,5 @@ header {
   line-height: var(--lh-100);
   letter-spacing: var(--ls-none);
 
-  color: var(--text-logo);
+  color: var(--logo-icon);
 }
-
-
