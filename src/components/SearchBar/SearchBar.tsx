@@ -13,11 +13,9 @@ const SearchBar: React.FC<SearchBarProps> = ({onSearch, error}) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     onSearch?.(userName);
-    console.log("Searching for: ", userName);
   }
   
   return (
-    <>
       <form className={styles.searchBar} onSubmit={handleSubmit}>
         <div className={styles.searchInput}>
         <SearchIcon />
@@ -36,7 +34,6 @@ const SearchBar: React.FC<SearchBarProps> = ({onSearch, error}) => {
           Search
         </button>
       </form>
-    </>
   );
 };
 export default SearchBar;

@@ -1,10 +1,9 @@
 .searchBar {
   padding: var(--spacing-100) var(--spacing-150);
-  display: grid;
-  grid-template-columns: max-content max-content;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-300);
+  /* gap: var(--spacing-300); */
   background-color: var(--bg-card);
   border-radius: var(--radius-16);
   box-shadow: 0 16px 30px -10px hsla(227, 46%, 50%, 19%);
@@ -14,26 +13,31 @@
   box-shadow: 0 0 0 3px var(--bg-page), 0 0 0 5px var(--clr-blue-500);
 }
 .searchInput {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: max-content auto max-content;
+  flex: 1;
+  min-width: 0;
 }
 .searchIcon {
   margin-inline-end: var(--spacing-100);
 }
 .input {
+  
+  flex:1;
+  min-width: 0;
   border: 0;
   outline: 0;
-  font-size: var(--fs-preset-3);
+  font-size: var(--fs-preset-3-mobile);
   font-weight: var(--fw-regular);
   line-height: var(--lh-140);
   letter-spacing: var(--ls-none);
   color: var(--text-primary);
   background-color: var(--bg-card);
+  /* margin-inline-start: -5px; */
 }
 .input::placeholder {
   font-size: var(--fs-preset-3-mobile);
-  color: var(--text-secondary);
+  color: var(--text-secondary); 
 }
 .searchBtn {
   padding: var(--spacing-150) var(--spacing-250);
