@@ -1,0 +1,26 @@
+.noResultsSection {
+  background-color: var(--bg-card);
+  padding: var(--spacing-600);
+  border-radius: 15px;
+  display: grid;
+  gap: var(--spacing-200);
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 16px 30px -10px hsla(227, 46%, 50%, 19%);
+}
+.noResultsTitle {
+   font-size: var(--fs-preset-2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-140);
+  letter-spacing: var(--ls-none);
+  color: var(--text-primary);
+
+}
+.noResultsText {
+  font-size: var(--fs-preset-6);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-none);
+  color: var(--text-muted);
+}
+
