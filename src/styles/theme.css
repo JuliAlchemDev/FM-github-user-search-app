@@ -4,15 +4,19 @@
 
   --text-primary: var(--clr-neutral-700);
   --text-secondary: var(--clr-neutral-500);
-  --text-logo: var(--clr-neutral-900);
+  --logo-icon: var(--clr-neutral-900);
+  --text-accent: var(--clr-blue-500);
+  --text-muted: var(--clr-neutral-300);
+  --clr-error: var(--clr-red-500);
 }
 
 .dark {
   --bg-page: var(--clr-neutral-900);
   --bg-card: var(--clr-neutral-800);
 
-  
   --text-primary: var(--clr-neutral-0);
-  --text-logo: var(--text-primary);
-  --text-secondary: var(--clr-neutral-0); /*opacity 70%*/
+  --logo-icon: var(--text-primary);
+  --text-secondary: var(--clr-neutral-0);
+  --text-accent: var(--clr-blue-300);
+  --text-muted: var(--clr-neutral-200);
 }
