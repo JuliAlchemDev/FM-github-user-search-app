@@ -1,0 +1,44 @@
+.profileLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-secondary);
+  display: grid;
+  gap: var(--spacing-200);
+}
+.linkIcon {
+  color: var(--logo-icon);
+}
+.profileLinkItem {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+    gap: var(--spacing-200);
+
+}
+.muted {
+  opacity: 0.7;
+}
+.blogLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-10);
+  border: 0;
+  outline: 0;
+}
+.profileLinkItem:focus-within {
+  border-radius: var(--radius-4);
+  box-shadow:
+    0 0 0 3px var(--bg-card),
+    0 0 0 5px var(--clr-blue-500);
+}
+
+.blogLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (min-width: 48rem) {
+    .profileLinks{
+        grid-template-columns: 1fr 1fr;
+    }
+}
