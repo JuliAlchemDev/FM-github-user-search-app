@@ -1,19 +1,18 @@
-#root {
-  margin-block-start: var(--spacing-400);
-  display: grid;
-  justify-content: center;
-
-  gap: var(--spacing-400);
-}
-
 body {
   background-color: var(--bg-page);
 
   font-family: var(--ff-base);
-
   font-size: var(--fs-preset-6);
   font-weight: var(--fw-regular);
   line-height: var(--lh-150);
   letter-spacing: var(--ls-none);
- 
+}
+
+#root {
+  margin-block-start: var(--spacing-400);
+  display: grid;
+  gap: var(--spacing-400);
+  width: min(calc(100% - 2rem), 704px);
+
+  margin-inline: auto;
 }
