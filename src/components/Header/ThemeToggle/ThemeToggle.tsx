@@ -1,4 +1,4 @@
-import styles from "./ThemeToogle.module.css";
+import styles from "./ThemeToggle.module.css";
 import SunIcon from "./Icons/SunIcon";
 import MoonIcon from "./Icons/MoonIcon";
 import { useState } from "react";
