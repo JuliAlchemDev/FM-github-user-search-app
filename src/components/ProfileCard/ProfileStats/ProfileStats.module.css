@@ -1,0 +1,31 @@
+.profileStats {
+  background-color: var(--bg-page);
+  padding: var(--spacing-200) var(--spacing-250);
+  display: grid;
+  gap: var(--spacing-200);
+  border-radius: var(--radius-10);
+}
+.statItem {
+  display: grid;
+  gap: var(--spacing-050);
+}
+.statLabel {
+  font-size: var(--fs-preset-7);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-none);
+  color: var(--text-secondary);
+}
+.statValue {
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-140);
+  letter-spacing: var(--ls-none);
+  color: var(--text-primary);
+}
+@media (min-width: 48rem) {
+  .profileStats {
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--spacing-200) var(--spacing-400);
+  }
+}
