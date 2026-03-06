@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import ThemeToggle from "./ThemeToggle/ThemeToogle";
+import ThemeToggle from "./ThemeToggle/ThemeToggle";
 
 
 type HeaderProps = {

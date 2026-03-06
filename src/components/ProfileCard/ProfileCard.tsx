@@ -1,5 +1,4 @@
 import { GitHubUser } from "../../types/github";
-import { mockUser } from "../../mocks/github.mock";
 import styles from "./ProfileCard.module.css";
 import NoResultsFound from "./NoResults";
 import ProfileLinks from "./ProfileLinks/ProfileLinks";
@@ -26,7 +25,7 @@ const formatDate = (date: string) => {
 type ProfileCardProps = {
   user?: GitHubUser | null;
 };
-const ProfileCard = ({ user = mockUser }: ProfileCardProps) => {
+const ProfileCard = ({ user  }: ProfileCardProps) => {
   if (!user) return <NoResultsFound />;
   const {
     name,
@@ -41,7 +40,7 @@ const ProfileCard = ({ user = mockUser }: ProfileCardProps) => {
     public_repos,
     followers,
     following,
-  } = mockUser;
+  } = user;
 
   const joinDate = formatDate(created_at);
 
