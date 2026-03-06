@@ -2,7 +2,7 @@ import { mockUser } from "../../mocks/github.mock";
 import styles from "./ProfileCard.module.css";
 import NoResultsFound from "./NoResults";
 import ProfileLinks from "./ProfileLinks/ProfileLinks";
-import ProfileStats from "./ProfileStats";
+import ProfileStats from "./ProfileStats/ProfileStats";
 
 const ProfileCard = () => {
   const {
