@@ -38,30 +38,38 @@
   grid-column: span 2;
   display: grid;
   gap: var(--spacing-300);
+  margin-block-start: var(--spacing-300);
 }
 .profileBio {
   color: var(--text-secondary);
 }
 
-.profileStats {
-  background-color: var(--bg-page);
-  padding: var(--spacing-200);
-  display: grid;
-  gap: var(--spacing-200);
-  border-radius: var(--radius-10);
+@media (min-width: 48rem) {
+  .profileSection {
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+  }
+  .userAvatar {
+    height: 117px;
+    width: 117px;
+    grid-row: 1 / -1;
+    margin-inline-end: var(--spacing-400);
+  }
+  .profileHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .profileLogin {
+    margin-block-start: var(--spacing-025);
+  }
+  .profileJoinDate {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+  .profileHeader,
+  .profileInfo {
+    grid-column: 2 / -1;
+  }
 }
-.statLabel {
-  font-size: var(--fs-preset-7);
-  font-weight: var(--fw-regular);
-  line-height: var(--lh-150);
-  letter-spacing: var(--ls-none);
-  color: var(--text-secondary);
-}
-.statValue {
-  font-size: var(--fs-preset-2);
-  font-weight: var(--fw-bold);
-  line-height: var(--lh-140);
-  letter-spacing: var(--ls-none);
-  color: var(--text-primary);
-}
-
