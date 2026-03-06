@@ -13,18 +13,18 @@ type ProfileLinksProps = {
 const NotAvailable = () => <span className={styles.muted}>Not available</span>;
 const linkClass = (value: string | null) =>
   `${styles.linkIcon} ${!value ? styles.muted : ""}`;
-
 const ProfileLinks = ({
   location,
   blog,
   twitter_username,
   company,
 }: ProfileLinksProps) => {
+  const locationCleaner = location?.split(",")[0]; 
   return (
     <ul className={styles.profileLinks}>
       <li className={styles.profileLinkItem}>
         <LocationIcon className={linkClass(location)} />
-        {location ?? <NotAvailable />}
+        {locationCleaner ?? <NotAvailable />}
       </li>
       <li className={styles.profileLinkItem}>
         <TwitterIcon className={linkClass(twitter_username)} />
