@@ -19,6 +19,31 @@ const ProfileCard = () => {
     followers,
     following,
   } = mockUser;
+  const monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const formatDate = (date: string) => {
+    const newDate = new Date(date);
+    const year = newDate.getFullYear();
+    const month = newDate.getMonth();
+    const day = newDate.getDate();
+
+    return `${day} ${monthNames[month]} ${year}`;
+  };
+
+  const joinDate = formatDate(created_at);
 
   return (
     <main className={styles.profileSection}>
@@ -32,7 +57,7 @@ const ProfileCard = () => {
       <header className={styles.profileHeader}>
         <h2 className={styles.profileName}>{name}</h2>
         <p className={styles.profileLogin}>@{login}</p>
-        <p className={styles.profileJoinDate}>{created_at}</p>
+        <p className={styles.profileJoinDate}>Joined {joinDate}</p>
       </header>
       <section className={styles.profileInfo}>
         <p className={styles.profileBio}>
