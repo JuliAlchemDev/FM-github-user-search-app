@@ -43,7 +43,9 @@
 .profileBio {
   color: var(--text-secondary);
 }
-
+.muted {
+  opacity: 0.7;
+}
 @media (min-width: 48rem) {
   .profileSection {
     grid-template-columns: max-content 1fr;

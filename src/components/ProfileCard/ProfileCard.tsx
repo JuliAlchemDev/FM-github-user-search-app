@@ -1,10 +1,33 @@
+import { GitHubUser } from "../../types/github";
 import { mockUser } from "../../mocks/github.mock";
 import styles from "./ProfileCard.module.css";
 import NoResultsFound from "./NoResults";
 import ProfileLinks from "./ProfileLinks/ProfileLinks";
 import ProfileStats from "./ProfileStats/ProfileStats";
 
-const ProfileCard = () => {
+const monthNames = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const formatDate = (date: string) => {
+  const newDate = new Date(date);
+  return `${newDate.getDate()} ${monthNames[newDate.getMonth()]} ${newDate.getFullYear()}`;
+};
+type ProfileCardProps = {
+  user?: GitHubUser | null;
+};
+const ProfileCard = ({ user = mockUser }: ProfileCardProps) => {
+  if (!user) return <NoResultsFound />;
   const {
     name,
     login,
@@ -19,29 +42,6 @@ const ProfileCard = () => {
     followers,
     following,
   } = mockUser;
-  const monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-
-  const formatDate = (date: string) => {
-    const newDate = new Date(date);
-    const year = newDate.getFullYear();
-    const month = newDate.getMonth();
-    const day = newDate.getDate();
-
-    return `${day} ${monthNames[month]} ${year}`;
-  };
 
   const joinDate = formatDate(created_at);
 
@@ -61,7 +61,7 @@ const ProfileCard = () => {
       </header>
       <section className={styles.profileInfo}>
         <p className={styles.profileBio}>
-          {bio ? bio : "This profile has no bio"}
+          {bio ?? <span className={styles.muted}>This profile has no bio</span>}
         </p>
         <ProfileStats
           public_repos={public_repos}
@@ -76,7 +76,6 @@ const ProfileCard = () => {
         />
       </section>
     </main>
-    // <NoResultsFound />
   );
 };
 export default ProfileCard;
