@@ -1,6 +1,6 @@
 import { GitHubUser } from "../../types/github";
 import styles from "./ProfileCard.module.css";
-import NoResultsFound from "./NoResults";
+import NoResultsFound from "../UI/NoResults/NoResults";
 import ProfileLinks from "./ProfileLinks/ProfileLinks";
 import ProfileStats from "./ProfileStats/ProfileStats";
 
@@ -25,7 +25,7 @@ const formatDate = (date: string) => {
 type ProfileCardProps = {
   user?: GitHubUser | null;
 };
-const ProfileCard = ({ user  }: ProfileCardProps) => {
+const ProfileCard = ({ user }: ProfileCardProps) => {
   if (!user) return <NoResultsFound />;
   const {
     name,
