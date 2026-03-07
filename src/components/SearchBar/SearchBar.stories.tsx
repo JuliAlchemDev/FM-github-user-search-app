@@ -5,7 +5,7 @@ const meta = {
     title: "Components/SearchBar",
     component: SearchBar,
     tags: ["autodocs"],
-    parameters: {layout: "centered"},
+    parameters: {layout: "padded"},
 } satisfies Meta<typeof SearchBar>;
 
 export default meta;
