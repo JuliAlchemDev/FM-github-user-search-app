@@ -13,7 +13,8 @@ const App: React.FC = () => {
 
   const handleSearch = async (username: string) => {
     setIsLoading(true);
-    const minDelay = new Promise((resolve) => setTimeout(resolve, 2000));
+    setError("");
+    const minDelay = new Promise((resolve) => setTimeout(resolve, 3000));
 
     try {
       const [response] = await Promise.all([
