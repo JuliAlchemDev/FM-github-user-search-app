@@ -13,6 +13,9 @@
   height: 240px;
   width: 240px;
   border-radius: 50%;
+  box-shadow:
+    0 0 0 3px var(--bg-page),
+    0 0 0 4.5px var(--text-muted);
 }
 .searchingText {
   font-size: var(--fs-preset-1);
