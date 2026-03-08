@@ -23,8 +23,3 @@ export const DarkTheme: Story = {
     user: mockUser,
   },
 };
-export const NoResults: Story = {
-    args: {
-    user: null,
-  },
-};
