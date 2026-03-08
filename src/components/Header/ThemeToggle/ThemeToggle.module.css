@@ -13,21 +13,17 @@
   font-weight: var(--fw-bold);
   line-height: var(--lh-140);
   letter-spacing: var(--ls-loose);
-  color: var(--text-secondary);
+
+  color: var(--text-toggle);
 }
 .themeToggle:hover,
 .themeToggle:focus-visible {
   cursor: pointer;
-  color: var(--clr-neutral-700);
-}
-
-.themeToggle:hover path,
-.themeToggle:focus-visible path {
-  fill: var(--clr-neutral-700);
+  color: var(--text-toggle-active);
 }
 
 .themeToggle:focus-visible {
   box-shadow:
-    0 0 0 3px var(--clr-neutral-100),
-    0 0 0 5px var(--clr-blue-500);
+    0 0 0 3px var(--bg-page),
+    0 0 0 5px var(--text-accent);
 }
