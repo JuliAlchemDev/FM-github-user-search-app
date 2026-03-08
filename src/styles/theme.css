@@ -8,6 +8,10 @@
   --text-accent: var(--clr-blue-500);
   --text-muted: var(--clr-neutral-300);
   --clr-error: var(--clr-red-500);
+
+  --text-toggle: var(--clr-neutral-500);
+  --text-toggle-active: var(--clr-neutral-700);
+  
 }
 
 .dark {
@@ -19,4 +23,8 @@
   --text-secondary: var(--clr-neutral-0);
   --text-accent: var(--clr-blue-300);
   --text-muted: var(--clr-neutral-200);
+  --text-toggle: var(--clr-neutral-200);
+  --text-toggle-active: var(--clr-neutral-0);;
+
+
 }
