@@ -2,6 +2,10 @@
 
 A responsive GitHub user search application built with React and TypeScript. Users can search for any GitHub profile by username, view detailed information, and switch between light and dark themes.
 
+
+[presentation](https://github.com/user-attachments/assets/db022abe-6c23-414f-991b-f8f4cf233127)
+
+
 <video src="./public/presentation.mp4" autoplay loop muted width="600"></video>
 ## ✨ Technologies
 
