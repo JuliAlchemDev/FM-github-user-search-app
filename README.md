@@ -61,3 +61,4 @@ This project pushed me beyond recreating a design. Configuring Storybook with a 
 
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6)
 - Data from [GitHub REST API](https://docs.github.com/en/rest/users/users)
+- AI generated video loader [Pika](https://pika.art)
