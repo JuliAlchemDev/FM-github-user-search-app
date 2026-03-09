@@ -5,7 +5,8 @@ import ProfileCard from "./components/ProfileCard/ProfileCard";
 import { GitHubUser } from "./types/github";
 import { mockUser } from "./mocks/github.mock";
 import Loader from "./components/UI/Loader/Loader";
-
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+if (prefersDark) document.documentElement.classList.add("dark");
 const App: React.FC = () => {
   const [user, setUser] = useState<GitHubUser | null>(mockUser);
   const [error, setError] = useState<string>("");
@@ -39,7 +40,7 @@ const App: React.FC = () => {
   };
   return (
     <>
-      <Header />
+      <Header defaultDark={prefersDark} />
       <SearchBar onSearch={handleSearch} error={error} />
       {isLoading ? <Loader /> : <ProfileCard user={user} />}
     </>
