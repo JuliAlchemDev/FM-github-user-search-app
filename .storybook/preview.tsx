@@ -47,6 +47,7 @@ const preview: Preview = {
       },
     },
     a11y: { test: 'todo' },
+    chromatic: { viewports: [375, 768, 1440] },
   },
   decorators: [ThemeDecorator],
   tags: ['autodocs'],
