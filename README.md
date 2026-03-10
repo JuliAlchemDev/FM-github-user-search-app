@@ -7,6 +7,12 @@ A responsive GitHub user search application built with React and TypeScript. Use
 
 <!-- <video src="./public/presentation.mp4" autoplay loop muted width="600"></video> -->
 
+## Links
+
+- Solution URL: [GitHub](https://github.com/JuliAlchemDev/FM-github-user-search-app)
+- Live Site URL: [GitHub Pages](https://julialchemdev.github.io/FM-github-user-search-app/) 
+- StoryBook URL : [Storybook](https://69aedf7cdc656b6a19915fe9-zslzdssbsa.chromatic.com)
+
 ## ✨ Technologies
 
 - **React 18** — Component-based UI with hooks
